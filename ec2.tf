@@ -140,6 +140,12 @@ resource "aws_instance" "web_server" {
   
 
   instance_type = "t2.nano" # Typo here ("micro" is misspelled)
+<<<<<<< HEAD
 
 }
 >>>>>>> origin/second
+=======
+}
+
+# remote add first
+>>>>>>> origin/first
