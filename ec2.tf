@@ -1,3 +1,9 @@
+
+/*
+resource "aws_instance" "web_server" {
+  ami           = "ami-0c55b159cbfafe1f0" # Ubuntu 20.04 LTS
+  instance_type = "t2.micro" # Typo here ("micro" is misspelled)
+}
 # Data source to get the latest Amazon Linux 2 AMI
 data "aws_ami" "amazon_linux" {
   most_recent = true
@@ -77,7 +83,7 @@ resource "aws_iam_instance_profile" "ec2_profile" {
     Name = "EC2-SSM-Profile"
   }
 }
-/*
+
 # EC2 Instance
 resource "aws_instance" "linux_instance" {
   ami           = data.aws_ami.amazon_linux.id
