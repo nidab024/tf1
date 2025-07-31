@@ -130,5 +130,5 @@ output "instance_private_dns" {
 */
 resource "aws_instance" "web_server" {
   ami           = "ami-0c55b159cbfafe1f0" # Ubuntu 20.04 LTS
-  instance_type = "t2.small" # Typo here ("micro" is misspelled)
+  instance_type = "t2.nano" # Typo here ("micro" is misspelled)
 }
